@@ -16,7 +16,7 @@ and year of birth; see arguments \code{colId},
 
 \item{pathNA}{Logical, set dummy path (to "XXX") where path information is unknown (missing).}
 
-\item{recode}{Logical, internally recode individual, father and, mother identif ication to
+\item{recode}{Logical, internally recode individual, father and, mother identification to
 \code{1:n} codes, while missing parents are defined with \code{0}; this option
 must be used if  identif ications in \code{x} are not already given as \code{1:n}
 codes, see also argument \code{sort}.}

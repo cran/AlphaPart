@@ -1,12 +1,12 @@
-6722dce81a2e193cdcf5e56f28dbc78e *DESCRIPTION
+c946355cc6a3644b04179e6da2799126 *DESCRIPTION
 fcd736f3a1099fa6a9a45d70012c81bf *NAMESPACE
-2c010644a23a84815dc1aac34db2e91e *R/AlphaPart.R
+88e8420f70319361dae329ba5b694929 *R/AlphaPart.R
 ec33311bcb7e1bf3b082a7109c49a35f *R/AlphaPartSubset.R
 e5fc95e6cc15df462ee1d8be9606f4e0 *R/AlphaPartSum.R
 c989260c212d77593e21d2e19550b54b *R/data.R
 d9dc178e1bd066df87e381509c721dd3 *R/pedFixBirthYear.R
 4f736586022c6be740a16703a9795db2 *R/pedSetBase.R
-f6bc996f892bb1d4b5b12fa526573f99 *R/plot.summaryAlphaPart.R
+38c253df888731161d374c5b0fe86c4e *R/plot.summaryAlphaPart.R
 dec0af696ee7a6d1a1167bd20a1528b9 *R/print.AlphaPart.R
 3f109fcacafc32075e7b6855bace9209 *R/print.plotSummaryAlphaPart.R
 e73c8bbee0e8f93d6cd5cf536c159788 *R/print.summaryAlphaPart.R
@@ -23,7 +23,7 @@ d86bbe3bb003c7d40202561fb3b7c9df *demo/AlphaPart_deterministic.R
 d134205882c83da57f9039d4c3b833db *demo/AlphaPart_stochastic.R
 80c4e0d4909b9f610a0dd25fd9c5091b *inst/doc/alphaPart-vignette.R
 fe6696a794b49ed095bd25fcf0e628d9 *inst/doc/alphaPart-vignette.Rmd
-f77206b4df6389e4d38291db9a10b6dc *inst/doc/alphaPart-vignette.html
+8a7bcc88a747248ccc34cd7333b35422 *inst/doc/alphaPart-vignette.html
 811de235f2084d596b5c2b7e8e9dd45b *inst/examples/examples_AlphaPart.R
 c392cb3aa92684bc6a0c8409b526bbb4 *inst/examples/examples_AlphaPartSubset.R
 a53a37ee6e0deab62c48b02e55f21cce *inst/examples/examples_AlphaPartSum.R
@@ -35,7 +35,7 @@ bb6378c0f0410416a8b8f974186d386f *inst/examples/examples_print.plotSummaryAlphaP
 bf6307168ffae606958b8db7ac407d27 *inst/examples/examples_savePlot.plotsummaryAlphaPart.R
 1f275019b107dd1af084f7549c222d2b *inst/examples/examples_summary.AlphaPart.R
 45bccd6f0f70e6c3b5eafb9a16025c7d *inst/examples/examples_write.csv.R
-f6ce0efad95eeff89671389c9cb299ca *man/AlphaPart.Rd
+641b3210a211e319b2b9e3de75b89c4d *man/AlphaPart.Rd
 76e19f479a5e6199e2ca233e41fc9c83 *man/AlphaPart.ped.Rd
 319cadc4314473c11a513efd16b9127d *man/AlphaPartSubset.Rd
 61d9bc6284004dd2e1493f8e37b73712 *man/AlphaPartSum.Rd

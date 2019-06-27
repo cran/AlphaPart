@@ -12,12 +12,12 @@ Imports: directlabels (>= 1.1), gdata (>= 2.6.0), ggplot2 (>= 0.8.9),
 Suggests: RColorBrewer (>= 1.0-2), truncnorm (>= 1.0-5), knitr,
         rmarkdown, testthat
 LinkingTo: Rcpp
-Version: 0.6.0
+Version: 0.7.0
 Date: 2019-05-20
 NeedsCompilation: yes
-Packaged: 2019-06-18 10:46:09 UTC; jana
+Packaged: 2019-06-27 09:46:22 UTC; jana
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1
 Encoding: UTF-8
 Repository: CRAN
-Date/Publication: 2019-06-18 16:30:03 UTC
+Date/Publication: 2019-06-27 11:10:08 UTC

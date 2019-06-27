@@ -40,7 +40,7 @@
 #' and year of birth; see arguments \code{colId},
 #' \code{colFid}, \code{colMid}, \code{colPath}, and \code{colAgv}; see also details about the validity of pedigree.
 #' @param pathNA Logical, set dummy path (to "XXX") where path information is unknown (missing).
-#' @param recode Logical, internally recode individual, father and, mother identif ication to
+#' @param recode Logical, internally recode individual, father and, mother identification to
 #' \code{1:n} codes, while missing parents are defined with \code{0}; this option
 #' must be used if  identif ications in \code{x} are not already given as \code{1:n}
 #' codes, see also argument \code{sort}.
@@ -162,7 +162,7 @@ AlphaPart <- function (x, pathNA=FALSE, recode=TRUE, unknown=NA, sort=TRUE, verb
 
   ## --- Sort and recode pedigree ---
 
-  ## Make sure that identif ications are numeric if  recode=FALSE
+  ## Make sure that identifications are numeric if  recode=FALSE
   test <- !sapply(x[, c(colId, colFid, colMid)], is.numeric) & !recode
   if (any(test)) {
     stop("argument 'recode' must be 'TRUE' when identif ications in 'x' are not numeric")

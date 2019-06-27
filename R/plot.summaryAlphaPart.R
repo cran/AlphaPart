@@ -197,7 +197,8 @@ plot.summaryAlphaPart <- function (
 
       ## Prepare plot
       #trait in "" since it is not defined
-      p <- qplot(x=by, y="trait", group=path, data=tmp, color=path, linetype=path, geom="line")
+      trait <- tmp$trait
+      p <- qplot(x=by, y=trait, group=path, data=tmp, color=path, linetype=path, geom="line")
 
       p <- p + geom_line(size=lineSize)
 
