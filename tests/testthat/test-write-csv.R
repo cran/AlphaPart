@@ -8,11 +8,9 @@ test_that("Check writing input for write.csv.AlphaPart", {
 })
 
 test_that("Check writing process for write.csv.AlphaPart", {
-  ## Load an example data
-  data("AlphaPart.ped")
 
   ## Partition additive genetic values
-  res <- AlphaPart(x=AlphaPart.ped, colPath="loc", colAGV=c("agv1", "agv2"))
+  res <- AlphaPart(x=AlphaPart.ped, colPath="country", colBV="bv1")
 
   ## Write summary on the disk and collect saved file names
   dirT <- tempdir()
@@ -24,10 +22,6 @@ test_that("Check writing process for write.csv.AlphaPart", {
   tmp <- read.csv2(file=retF[1])
   expect_equal(tmp$agv1,   res$agv1$agv1)
   expect_equal(tmp$agv1_1, res$agv1$agv1_1)
-
-  tmp <- read.csv2(file=retF[2])
-  expect_equal(tmp$agv1,   res$agv2$agv1)
-  expect_equal(tmp$agv1_1, res$agv2$agv1_1)
 
   ## Clean up
   files <- dir(path=dirT, pattern="AlphaPart*")
@@ -48,11 +42,9 @@ test_that("Check writing input for write.csv.summaryAlphaPart", {
 })
 
 test_that("Check writing process for write.csv.summaryAlphaPart", {
-  ## Load an example data
-  data("AlphaPart.ped")
 
   ## Partition additive genetic values
-  res <- AlphaPart(x=AlphaPart.ped, colPath="loc", colAGV=c("agv1", "agv2"))
+  res <- AlphaPart(x=AlphaPart.ped, colPath="country", colBV=c("bv1"))
 
   ## Summarize population by generation (=trend)
   ret <- summary(res, by="gen")
@@ -65,14 +57,8 @@ test_that("Check writing process for write.csv.summaryAlphaPart", {
 
   ## Check content of files
   col <- c("gen", "N", "Sum", "1", "2")
-  tmp <- read.csv2(file=retF[1]); colnames(tmp) <- col ## need colnames as 1 gets X1
-  expect_equal(tmp, ret$agv1$abs)
-  tmp <- read.csv2(file=retF[2]); colnames(tmp) <- col ## ...
-  expect_equal(tmp, ret$agv1$rel)
-  tmp <- read.csv2(file=retF[3]); colnames(tmp) <- col ## ...
-  expect_equal(tmp, ret$agv2$abs)
-  tmp <- read.csv2(file=retF[4]); colnames(tmp) <- col ## ...
-  expect_equal(tmp, ret$agv2$rel)
+  tmp <- read.csv2(file=retF[1])
+  expect_equal(tmp, ret$bv1)
 
   ## Clean up
   files <- dir(path=dirT, pattern="AlphaPart*")
