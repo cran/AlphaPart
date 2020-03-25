@@ -13,7 +13,7 @@
 #' @param x Object on which to chose savePLot method.
 #' @param filename Character, filename to save to.
 #' @param type  Character, file/device type.
-#' @param device Device, the device to save from. TODO
+#' @param device Device, the device to save from.
 #' @param pre.hook Function, call some code before calling print method for plots (see examples).
 #' @param traitsAsDir Logical, should plots be saved within trait folders; the construction is
 #' \code{file.path(dirname(file), trait, basename(file))}.
@@ -31,27 +31,23 @@
 #' @importFrom grDevices dev.cur
 #' @importFrom grDevices dev.off
 
-savePlot  <- function (x, filename=paste("Rplot", type, sep="."), type=c("pdf", "png", "jpeg", "tiff", "bmp"), device=dev.cur(), ...)    {
+
+#' @export
+savePlot  <- function ( ...)    {
     UseMethod("savePlot")
 }
 
 
-# Default savePlot method
-savePlot.default <- function(
-  x,                                           ##<< (not used for this method)
-  filename=paste("Rplot", type, sep="."),      ##<< character, filename to save to
-  type=c("pdf", "png", "jpeg", "tiff", "bmp"), ##<< character, file/device type
-  device=dev.cur(),                            ##<< device, the device to save from
-  ...                                          ##<< arguments passed to specific methods
-) {
+#' @describeIn savePlot Default \code{savePlot} method.
+savePlot.default <- function(...) {
   
   ##seealso<< \code{\link[grDevices]{savePlot}} help page on the default \code{savePlot}
   ## method in the \pkg{grDevices} package
   
-  grDevices::savePlot(filename=filename, type=type, device=device)
+  grDevices::savePlot(...)
   
   ##value<< See \code{\link[grDevices]{savePlot}} for details.
-  
+
 }
 
 #' @describeIn savePlot Save plot objects of class \code{plotSummaryAlphaPart} on the disk for
@@ -71,7 +67,6 @@ savePlot.plotSummaryAlphaPart <- function(
   traitsAsDir=FALSE,                           ##<<
   ...                                          ##<<
 ) {
-
 
 
   if (length(filename) > 1) stop("'filename' argument must be of length one")

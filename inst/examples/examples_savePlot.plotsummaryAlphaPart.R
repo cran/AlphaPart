@@ -7,8 +7,9 @@ ret <- summary(res, by="gen")
 ## Plot the partitions
 p <- plot(ret, ylab=c("BV for trait 1", "BV for trait 2"), xlab="Generation")
 
-\donttest{
 ## Save the plots
-savePlot(x = p, filename="test", type="png")
-}
+tmp <- savePlot(x = p, filename="test", type="png")
+
+## Remove the files
+unlink(tmp)
 
