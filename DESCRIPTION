@@ -27,10 +27,10 @@ Imports: directlabels (>= 1.1), gdata (>= 2.6.0), ggplot2 (>= 0.8.9),
 Suggests: RColorBrewer (>= 1.0-2), truncnorm (>= 1.0-5), knitr,
         rmarkdown, testthat (>= 3.0.0), covr
 LinkingTo: Rcpp
-Version: 0.8.2
-Date: 2021-09-20
+Version: 0.8.3
+Date: 2021-09-28
 NeedsCompilation: yes
-Packaged: 2021-09-20 12:27:57 UTC; thiago
+Packaged: 2021-09-28 09:07:39 UTC; thiago
 VignetteBuilder: knitr
 RoxygenNote: 7.1.2
 Encoding: UTF-8
@@ -41,4 +41,4 @@ Author: Gregor Gorjanc [aut, cre] (<https://orcid.org/0000-0001-8008-2787>),
   Thiago de Paula Oliveira [aut]
     (<https://orcid.org/0000-0002-4555-2584>)
 Repository: CRAN
-Date/Publication: 2021-09-21 06:50:05 UTC
+Date/Publication: 2021-09-28 11:30:08 UTC
