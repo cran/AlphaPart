@@ -1,4 +1,4 @@
-248ba839ef58042c79ef072e5097b78e *DESCRIPTION
+ab5b37b03015ae9fae5b2fbc2b1e4a86 *DESCRIPTION
 5da5c0e7b53108b4b0942c7b9b2c7a3b *NAMESPACE
 b24a7b32dddca26d1d980eecf6377417 *R/AlphaPart.R
 ec33311bcb7e1bf3b082a7109c49a35f *R/AlphaPartSubset.R
@@ -8,7 +8,7 @@ ff1afd110c4e4100f4b37c5da42fe513 *R/methods.R
 d9dc178e1bd066df87e381509c721dd3 *R/pedFixBirthYear.R
 4f736586022c6be740a16703a9795db2 *R/pedSetBase.R
 a43158d13af81f5896346fc2d903a4e3 *R/write.csv.R
-a920f04ecb0eb36d8e1c1de72062d817 *build/partial.rdb
+7e9d38016dc458fd8d7af96a1157469d *build/partial.rdb
 c2f0c9b5bd70dfbe4a37148e4cc14761 *build/vignette.rds
 2e8e8d681e80cd1496d90c495131c346 *data/AlphaPart.ped.rda
 3e2e58e2069a1f10c90b5d6cde4b5522 *demo/00Index
@@ -17,7 +17,7 @@ c2f0c9b5bd70dfbe4a37148e4cc14761 *build/vignette.rds
 f137c0cd695a7671407a5701bc5d768f *demo/AlphaPart_stochastic.R
 46750e778a5cdb4d65c347f8e43df623 *inst/doc/alphapart-vignette.R
 370fa53abfa9645deed97f10a87b945e *inst/doc/alphapart-vignette.Rmd
-f401b8467e7effb445d3e3eed348397d *inst/doc/alphapart-vignette.html
+d3405554dec105d95f00499207f93c4a *inst/doc/alphapart-vignette.html
 0106ea97bcd808f24f69dcdeafbd25d7 *inst/examples/examples_AlphaPart.R
 ab52365f135a80ca9a5bd895d7fbc952 *inst/examples/examples_AlphaPartSubset.R
 d7b3de705f4c2756ec9b9922661fe272 *inst/examples/examples_AlphaPartSum.R
@@ -51,17 +51,4 @@ b0faa91581814183c0139297b136b0cb *man/savePlot.plotSummaryAlphaPart.Rd
 b3f86c20b81b51f5162874977d38784d *src/Makevars
 c8e35a7d7a206bf196cf4f391739684f *src/Makevars.win
 259e39c2d34295c5c54f19cf7be9cd1e *src/init.c
-2e3ca2b11a2d0e91eafe25b039d32d09 *tests/testthat.R
-7fd4489e5b53a15831e5d707e15f73b9 *tests/testthat/test-alphapart.R
-deea6dc4b499f44ceeb027ccb18a376e *tests/testthat/test-alphapartitionsum.R
-06a6c51142ce95c9be2ba16afce53a21 *tests/testthat/test-alphapartsubset.R
-3b7fa951fe4d3cb7020de10ac8362a5f *tests/testthat/test-pedfixbirthyear.R
-c54da42bfd9297e210a581d59ba6dc3a *tests/testthat/test-pedsetbase.R
-27716439cac24469c312cb550fb6c0de *tests/testthat/test-plotSummaryAlphaPart.R
-6d8080cee38a99608d89da1cfd750ec5 *tests/testthat/test-printAlphaPart.R
-1808e5abb396bd4f47b7f81b3cb4ea4b *tests/testthat/test-printPlotSummaryAlphaPart.R
-947f7c7ea118e0a9f505799bd007c203 *tests/testthat/test-printSummary-alphapart.R
-2a9510109837aa29fdb361f36b82a39b *tests/testthat/test-savePlotSummaryAlphaPart.R
-c92f7ca9e1c5e248884282f835eef488 *tests/testthat/test-summary-alphapart.R
-5eb087c3dcd687169020d5b1f3fc0402 *tests/testthat/test-write-csv.R
 370fa53abfa9645deed97f10a87b945e *vignettes/alphapart-vignette.Rmd
