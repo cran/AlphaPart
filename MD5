@@ -1,14 +1,14 @@
-20c07b4877810199345a173084093201 *DESCRIPTION
+a521a33cd39e581280262a7a1239fb7d *DESCRIPTION
 f56b6ec58efca2290b9e4e0522c9a93f *NAMESPACE
-923d83aaddd19815476bfa8e3246f5ef *R/AlphaPart.R
+59fdd46a881bba412d00415be1d8993a *R/AlphaPart.R
 ec33311bcb7e1bf3b082a7109c49a35f *R/AlphaPartSubset.R
 7bfdb2b46c52c4022ef4d277484509d9 *R/AlphaPartSum.R
 8a1b4e826283efb92743f4ed3dee9d7f *R/data.R
-cfbb786b7ade19d50d9d5cee74027ff8 *R/methods.R
+f8fbc7957e30bcd2935ba8ebd0d159d5 *R/methods.R
 d9dc178e1bd066df87e381509c721dd3 *R/pedFixBirthYear.R
 4f736586022c6be740a16703a9795db2 *R/pedSetBase.R
 a43158d13af81f5896346fc2d903a4e3 *R/write.csv.R
-e5c49c9f3c92b50b1296d2d22df3318d *build/partial.rdb
+343d6c67975cd957a3cf2bfbc3ea2a84 *build/partial.rdb
 058d1f7e0d87e88e67efe799dc5f18f3 *build/vignette.rds
 2e8e8d681e80cd1496d90c495131c346 *data/AlphaPart.ped.rda
 3e2e58e2069a1f10c90b5d6cde4b5522 *demo/00Index
@@ -17,7 +17,7 @@ e5c49c9f3c92b50b1296d2d22df3318d *build/partial.rdb
 f137c0cd695a7671407a5701bc5d768f *demo/AlphaPart_stochastic.R
 46750e778a5cdb4d65c347f8e43df623 *inst/doc/alphapart-vignette.R
 370fa53abfa9645deed97f10a87b945e *inst/doc/alphapart-vignette.Rmd
-1f86fed0e7c9f16dda16b6cb432b5559 *inst/doc/alphapart-vignette.html
+961e8b9e0e47d6ff664798ae794208e4 *inst/doc/alphapart-vignette.html
 5b5342ce2eb5cd6374673708e46784ec *inst/examples/examples_AlphaPart.R
 ab52365f135a80ca9a5bd895d7fbc952 *inst/examples/examples_AlphaPartSubset.R
 d7b3de705f4c2756ec9b9922661fe272 *inst/examples/examples_AlphaPartSum.R
@@ -38,7 +38,7 @@ aa94fa90807c0b0d9d9f4da8939c6dca *man/centerPop.Rd
 808ed8aff06964aa498690409946e45c *man/getScale.Rd
 a017ad6595e60544e9e0ebf987468cf2 *man/pedFixBirthYear.Rd
 e192fbb821aa89976c8c9d7de3aad4a0 *man/pedSetBase.Rd
-821e20b1062569b0b7b25f9deabb4da2 *man/plot.summaryAlphaPart.Rd
+cda2329d18cc4f3f3463acc6d32ae4fe *man/plot.summaryAlphaPart.Rd
 d0945ba15425969ef14f336c3b66f0fb *man/print.AlphaPart.Rd
 85851e5f4a16ee59fbd78fff160b1e5b *man/print.plotSummaryAlphaPart.Rd
 aee571c91993dd7f98fbfd6244338ebc *man/print.summaryAlphaPart.Rd
