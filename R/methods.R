@@ -722,8 +722,6 @@ savePlot.plotSummaryAlphaPart <- function(
   traitsAsDir=FALSE,                           ##<<
   ...                                          ##<<
 ) {
-
-
   if (length(filename) > 1) stop("'filename' argument must be of length one")
   if (!("plotSummaryAlphaPart" %in% class(x))) stop("'x' must be of a 'plotSummaryAlphaPart' class")
   filenameOrig <- sub(pattern=paste(".", type, "$", sep=""), replacement="", x=filename)
@@ -790,7 +788,11 @@ centerPop <- function(y, colBV, path){
   # Selecting founders and missing pedigree animals
   #---------------------------------------------------------------------
   colBV <- (ncol(y)-length(colBV)+1):ncol(y)
-  tmp <- as.matrix(y[c(y[, 2]==0 & y[,3]==0), colBV])
+  if(length(colBV)==1){
+    tmp <- as.matrix(y[c(y[, 2]==0 & y[,3]==0), colBV])
+  }else{
+    tmp <- y[c(y[, 2]==0 & y[,3]==0), colBV]
+  }
   baseMean <- colMeans(tmp, na.rm = TRUE)
   #---------------------------------------------------------------------
   # Decision criteria
@@ -829,15 +831,21 @@ sEBV <- function(y, center, scale){
   #---------------------------------------------------------------------
   # Selecting founders and missing pedigree animals
   #---------------------------------------------------------------------
-  tmp <- y[c(y[, 1]==0 & y[,2]==0), -c(1,2)]
+  if(nrow(y)<=3){
+    tmp <- as.matrix(y[c(y[, 1]==0 & y[,2]==0), -c(1,2)])
+    y <- as.matrix(y[, -c(1,2)])    
+  }else{
+    tmp <- y[c(y[, 1]==0 & y[,2]==0), -c(1,2)]
+    y <- y[, -c(1,2)]
+  }
   #---------------------------------------------------------------------
   # Centering
   #---------------------------------------------------------------------
   if(is.logical(center)){
     if(center){
       center <- colMeans(tmp, na.rm = TRUE)
-      y[, -c(1,2)] <- y[, -c(1,2)] - 
-        rep(center, rep.int(nrow(y[, -c(1,2)]), ncol(y[, -c(1,2)])))
+      y <- y - 
+        rep(center, rep.int(nrow(y), ncol(y)))
     }
   }
   #---------------------------------------------------------------------
@@ -849,11 +857,11 @@ sEBV <- function(y, center, scale){
         sd(x, na.rm = TRUE)
       }
       scale <- apply(tmp, 2L, f)
-      y[, -c(1,2)]  <- y[, -c(1,2)] / 
-        rep(scale, rep.int(nrow(y[, -c(1,2)]), ncol(y[, -c(1,2)])))
+      y  <- y / 
+        rep(scale, rep.int(nrow(y), ncol(y)))
     }
   }
-  return(y[, -c(1,2)])
+  return(y)
 }  
 
 #' @title Get scale information
